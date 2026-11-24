@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodanova | عالم الترفيه والـ IPTV المتكامل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- خلفية النجوم المتحركة -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- الهيدر -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand-logo">BODA<span>NOVA</span></a>
+      <nav class="nav-links">
+        <a href="#stats">المحتوى</a>
+        <a href="#plans">الباقات</a>
+        <a href="#showcase">معرض الصور والفيديو</a>
+        <a href="#reviews">آراء العملاء</a>
+        <a href="#support">الدعم الفني</a>
+      </nav>
+      <a href="#plans" class="btn btn-primary btn-sm">اشترك الآن</a>
+    </div>
+  </header>
+
+  <!-- الواجهة الرئيسية -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">🔥 تجربة مشاهدة بلا حدود • ثبات عالي وجودة فائقة</span>
+      <h1 class="hero-title">أقوى محتوى ترفيهي في مكان واحد مع <span>Bodanova</span></h1>
+      <p class="hero-subtitle">
+        استمتع بمكتبة ضخمة تضم أحدث الأفلام والمسلسلات العالمية والعربية، وباقة واسعة من القنوات المشفرة والمباشرة بدون تقطيع، مع أنظمة بث مستقرة تناسب كل أجهزتك.
+      </p>
+      <div class="hero-actions">
+        <a href="#plans" class="btn btn-primary">تصفح الباقات والعروض</a>
+        <a href="https://wa.me/201102008626?text=مرحبًا%20Bodanova%20أرغب%20في%20الاستفسار%20عن%20الاشتراكات" target="_blank" class="btn btn-outline">تواصل عبر واتساب</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- إحصائيات المحتوى -->
+  <section id="stats" class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="20000">0</div>
+        <div class="stat-label">فيلم متنوع</div>
+        <p class="stat-desc">مكتبة متجددة باستمرار من أحدث الإنتاجات السينمائية بمختلف التصنيفات.</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="8000">0</div>
+        <div class="stat-label">مسلسل وحلقة</div>
+        <p class="stat-desc">أعمال درامية وأكشن وتشويق متكاملة بجودات متعددة تناسب سرعة الإنترنت لديك.</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="1700">0</div>
+        <div class="stat-label">قناة مشفرة ومباشرة</div>
+        <p class="stat-desc">تغطية شاملة للأحداث الرياضية والترفيهية والوثائقية والعائلية على مدار الساعة.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- الباقات والأسعار -->
+  <section id="plans" class="plans-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">باقات مرنة وعروض حصرية</span>
+        <h2>اختر الباقة المناسبة ليك</h2>
+        <p>أسعار واضحة داخل مصر وخارج مصر، وعرض خاص على الباقة السنوية + خصم 10% للفترات الأكبر من سنة.</p>
+      </div>
+
+      <!-- محدد العملة / المنطقة -->
+      <div class="region-switch">
+        <button type="button" class="region-btn active" data-region="eg">داخل مصر (ج.م)</button>
+        <button type="button" class="region-btn" data-region="intl">خارج مصر ($)</button>
+      </div>
+
+      <div class="plans-grid">
+        <!-- 3 شهور -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>باقة 3 شهور</h3>
+            <p>بداية مثالية لتجربة الاستقرار والسرعة</p>
+          </div>
+          <div class="plan-price" data-eg="250 ج.م" data-intl="20 $">250 ج.م</div>
+          <ul class="plan-features">
+            <li>✔ حتى 20000 فيلم متنوع</li>
+            <li>✔ حتى 8000 مسلسل</li>
+            <li>✔ حتى 1700 قناة مشفرة</li>
+            <li>✔ دعم فني متواصل</li>
+          </ul>
+          <button type="button" class="btn btn-outline plan-order-btn" data-plan="باقة 3 شهور">اطلب الباقة الآن</button>
+        </div>
+
+        <!-- 6 شهور -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>باقة 6 شهور</h3>
+            <p>توفير أكبر ومتابعة مستمرة لنصف عام</p>
+          </div>
+          <div class="plan-price" data-eg="350 ج.م" data-intl="35 $">350 ج.م</div>
+          <ul class="plan-features">
+            <li>✔ حتى 20000 فيلم متنوع</li>
+            <li>✔ حتى 8000 مسلسل</li>
+            <li>✔ حتى 1700 قناة مشفرة</li>
+            <li>✔ أولوية في الدعم الفني</li>
+          </ul>
+          <button type="button" class="btn btn-outline plan-order-btn" data-plan="باقة 6 شهور">اطلب الباقة الآن</button>
+        </div>
+
+        <!-- سنة (عرض خاص) -->
+        <div class="plan-card featured">
+          <div class="ribbon">عرض السنة 🔥</div>
+          <div class="plan-header">
+            <h3>باقة سنة كاملة</h3>
+            <p>أقوى قيمة مقابل السعر لمدة 12 شهرًا</p>
+          </div>
+          <div class="plan-price">
+            <span data-eg="500 ج.م" data-intl="50 $">500 ج.م</span>
+            <small class="old-price" data-eg="" data-intl="بدلاً من 60 $"></small>
+          </div>
+          <ul class="plan-features">
+            <li>✔ حتى 20000 فيلم متنوع</li>
+            <li>✔ حتى 8000 مسلسل</li>
+            <li>✔ حتى 1700 قناة مشفرة</li>
+            <li>✔ عرض خاص خارج مصر: 50$ بدل 60$</li>
+          </ul>
+          <button type="button" class="btn btn-primary plan-order-btn" data-plan="باقة سنة كاملة">احجز عرض السنة</button>
+        </div>
+
+        <!-- أكثر من سنة (خصم 10%) -->
+        <div class="plan-card special-discount">
+          <div class="ribbon">خصم 10%</div>
+          <div class="plan-header">
+            <h3>أكثر من سنة</h3>
+            <p>راحة بال طويلة المدى بخصم فوري 10%</p>
+          </div>
+          <div class="plan-price" data-eg="خصم 10% إضافي" data-intl="خصم 10% إضافي">خصم 10% إضافي</div>
+          <ul class="plan-features">
+            <li>✔ خصم 10% على إجمالي المدة الأكبر من سنة</li>
+            <li>✔ وصول كامل للمكتبة والقنوات</li>
+            <li>✔ تحديثات مستمرة وتجربة مستقرة</li>
+            <li>✔ دعم فني مباشر وسريع</li>
+          </ul>
+          <button type="button" class="btn btn-outline plan-order-btn" data-plan="باقة أكثر من سنة (خصم 10%)">اطلب بخصم 10%</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- معرض Bodanova المتحرك (7 فيديوهات + 5 صور) -->
+  <section id="showcase" class="showcase-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">معرض Bodanova المتحرك</span>
+        <h2>استعراض حي للنظام والمحتوى</h2>
+        <p>فيديوهات متحركة تلقائياً ولقطات واضحة لواجهة التشغيل، مع إمكانية التصفية وتكبير أي عنصر.</p>
+      </div>
+
+      <!-- أزرار التصفية -->
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">الكل (12)</button>
+        <button type="button" class="filter-btn" data-filter="video">الفيديوهات (7)</button>
+        <button type="button" class="filter-btn" data-filter="image">الصور (5)</button>
+      </div>
+
+      <!-- شبكة العرض -->
+      <div id="media-grid" class="media-grid">
+        <!-- 7 فيديوهات متحركة -->
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid1.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 1</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid2.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 2</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid3.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 3</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid4.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 4</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid5.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 5</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid6.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 6</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="video">
+          <div class="media-thumb video-frame">
+            <video class="auto-motion-video" src="media/videos/vid7.mp4" autoplay loop muted playsinline></video>
+            <span class="live-pill">● متحرك</span>
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>استعراض النظام 7</h4>
+            <span class="media-tag">فيديو</span>
+          </div>
+        </div>
+
+        <!-- 5 صور متحركة -->
+        <div class="media-card animated-card" data-type="image">
+          <div class="media-thumb image-frame">
+            <img class="ken-burns-img" src="media/images/img1.jpg" alt="واجهة التشغيل 1" />
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>واجهة التشغيل 1</h4>
+            <span class="media-tag">صورة</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="image">
+          <div class="media-thumb image-frame">
+            <img class="ken-burns-img" src="media/images/img2.jpg" alt="واجهة التشغيل 2" />
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>واجهة التشغيل 2</h4>
+            <span class="media-tag">صورة</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="image">
+          <div class="media-thumb image-frame">
+            <img class="ken-burns-img" src="media/images/img3.jpg" alt="واجهة التشغيل 3" />
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>واجهة التشغيل 3</h4>
+            <span class="media-tag">صورة</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="image">
+          <div class="media-thumb image-frame">
+            <img class="ken-burns-img" src="media/images/img4.jpg" alt="واجهة التشغيل 4" />
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>واجهة التشغيل 4</h4>
+            <span class="media-tag">صورة</span>
+          </div>
+        </div>
+
+        <div class="media-card animated-card" data-type="image">
+          <div class="media-thumb image-frame">
+            <img class="ken-burns-img" src="media/images/img5.jpg" alt="واجهة التشغيل 5" />
+            <button type="button" class="expand-btn" title="تكبير ومعاينة">⛶</button>
+          </div>
+          <div class="media-info">
+            <h4>واجهة التشغيل 5</h4>
+            <span class="media-tag">صورة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نافذة المعاينة المكبرة -->
+  <div id="media-modal" class="media-modal" aria-hidden="true">
+    <div class="modal-content glass-box">
+      <button type="button" id="close-modal" class="close-modal">✕</button>
+      <div id="modal-body" class="modal-body"></div>
+      <h3 id="modal-caption"></h3>
+    </div>
+  </div>
+
+  <!-- تقييمات العملاء -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ثقة عملائنا</span>
+        <h2>تقييمات العملاء</h2>
+        <p>شارك تجربتك مع Bodanova أو اطلع على آراء المشتركين.</p>
+      </div>
+
+      <form id="review-form" class="review-form glass-box">
+        <input type="text" id="reviewer-name" placeholder="اسمك الكريم" required />
+        <select id="review-rating">
+          <option value="5">⭐⭐⭐⭐⭐ (5/5 ممتاز)</option>
+          <option value="4">⭐⭐⭐⭐ (4/5 جيد جداً)</option>
+          <option value="3">⭐⭐⭐ (3/5 جيد)</option>
+        </select>
+        <input type="text" id="review-comment" placeholder="اكتب رأيك في الخدمة والسرعة..." required />
+        <button type="submit" class="btn btn-primary">إضافة التقييم</button>
+      </form>
+
+      <div id="reviews-list" class="reviews-grid">
+        <div class="review-card">
+          <div class="review-top">
+            <strong>كريم محمود</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <p>"السرعة ممتازة والتنقل بين الأقسام سلس جداً، والمكتبة كبيرة ومتنوعة."</p>
+        </div>
+        <div class="review-card">
+          <div class="review-top">
+            <strong>سارة حسن</strong>
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <p>"اشتركت في باقة السنة والتفعيل تم بسرعة والدعم الفني متجاوب جداً."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الدعم الفني والتواصل -->
+  <section id="support" class="support-section">
+    <div class="container support-box glass-box">
+      <div>
+        <span class="section-tag">مساعدة فورية</span>
+        <h2>الدعم الفني والتواصل المباشر</h2>
+        <p>فريق الدعم الفني جاهز لمساعدتك في التفعيل والإعدادات وحل أي استفسار تقني بأسرع وقت.</p>
+      </div>
+      <div class="support-contacts">
+        <a href="tel:01033674399" class="contact-pill support-highlight">
+          <span>رقم الدعم الفني:</span>
+          <strong>01033674399</strong>
+        </a>
+        <a href="https://wa.me/201102008626" target="_blank" class="contact-pill">
+          <span>واتساب / اتصال (1):</span>
+          <strong>01102008626</strong>
+        </a>
+        <a href="https://wa.me/201033674399" target="_blank" class="contact-pill">
+          <span>واتساب / (2):</span>
+          <strong>01033674399</strong>
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=61591321685258" target="_blank" class="contact-pill">
+          <span>صفحة فيسبوك:</span>
+          <strong>Bodanova Official</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand-logo">BODA<span>NOVA</span></div>
+      <p>جميع الحقوق محفوظة © 2026 Bodanova — محتوى ترفيهي رقمي متكامل.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
